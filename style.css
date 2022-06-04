@@ -1,0 +1,63 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Manrope', sans-serif;
+    margin: 0 auto;
+    background-color:  hsl(218, 23%, 16%);
+}
+img{
+    width: 100%;
+} 
+
+/* Font styling */
+.header-style{
+    color: hsl(150, 100%, 66%);
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+.p-style{
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+}
+
+.container{
+    width: 40.5%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.hero{
+    padding-top: 120px;
+    padding-bottom: 500px;
+    position: relative;
+   
+}
+.hero__contents{
+    background-color: hsl(217, 19%, 24%);
+    text-align: center;
+    padding: 35px 48px;
+    border-radius: 18px;
+}
+
+.hero__contents--divider{
+    
+}
+.hero__contents--btn{
+    position: relative;
+    bottom:-60px;
+    left: 185px;
+
+}
+.get-new-quote{
+    width: 12%;
+    background-color:hsl(150, 100%, 66%);
+    padding: 15px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+
+
+
