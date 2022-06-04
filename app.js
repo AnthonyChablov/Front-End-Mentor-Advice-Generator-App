@@ -2,6 +2,7 @@
 let insertQuoteUI  = document.querySelector('.insert-quote');
 let insertIdUI = document.querySelector('.insert-id-number');
 let getQuoteUI = document.querySelector('.get-new-quote');
+document.querySelector('p');
 
 //on event Listener
 getQuoteUI.addEventListener('click',(e)=>{
@@ -11,13 +12,19 @@ getQuoteUI.addEventListener('click',(e)=>{
         if(this.status === 200){
             let response = JSON.parse(this.responseText);
             console.log(response);
+            // assigning elements
             let idNumber = response.slip.id;
             let quote = response.slip.advice;
+
             insertQuoteUI.innerText= `${quote}`;
+            insertQuoteUI.classList.add('animation');
             insertIdUI.innerText= `${idNumber}`;
+            insertIdUI.classList.add('animation');
         }
     }
     xhr.send(); 
+    insertQuoteUI.classList.remove('animation');
+    insertIdUI.classList.remove('animation');
     e.preventDefault();
 });
 
