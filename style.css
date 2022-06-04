@@ -20,44 +20,54 @@ img{
     color: hsl(193, 38%, 86%);
     font-size: 28px;
 }
-
 .container{
-    width: 40.5%;
-    max-width: 1440px;
+    width: 80%;
+    max-width: 550px;
     margin: 0 auto;
 }
 .hero{
     padding-top: 120px;
     padding-bottom: 500px;
     position: relative;
-   
 }
 .hero__contents{
     background-color: hsl(217, 19%, 24%);
     text-align: center;
-    padding: 35px 48px;
+    padding: 35px 27px;
     border-radius: 18px;
 }
-
 .hero__contents--divider{
-    
+    padding-bottom: 38px;
 }
 .hero__contents--btn{
     position: relative;
-    bottom:-60px;
-    left: 185px;
-
+    margin: auto;
+    width:500px;
+    margin-left: -32px;
+    left: 50%;
+}
+.hero__contents--btn:hover{
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 .get-new-quote{
-    width: 12%;
+    width: 18%;
     background-color:hsl(150, 100%, 66%);
-    padding: 15px;
+    padding: 20px;
     display: flex;
     align-content: center;
     justify-content: center;
     border-radius: 50%;
-    
+
+    position: absolute;
+    margin: auto;
+    max-width: fit-content;
 }
+.get-new-quote:hover{
+    box-shadow: 0px 0px 25px hsl(150, 100%, 66%);
+}
+
 
 
 

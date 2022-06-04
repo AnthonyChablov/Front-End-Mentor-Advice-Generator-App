@@ -5,23 +5,19 @@ let getQuoteUI = document.querySelector('.get-new-quote');
 
 //on event Listener
 getQuoteUI.addEventListener('click',(e)=>{
-    
-    fetch('https://api.adviceslip.com/advice')
-        .then(response => response.json())
-        .then(data => console.log(data));
-    /* \
     const xhr = new XMLHttpRequest();
-    xhr.open('GET','https://api.adviceslip.com/advice',true);
+    xhr.open('GET','https://api.adviceslip.com/advice?t='+ Math.random(),true);
     xhr.onload= function(){
         if(this.status === 200){
             let response = JSON.parse(this.responseText);
-            console.log(response)
+            console.log(response);
             let idNumber = response.slip.id;
             let quote = response.slip.advice;
-            insertQuoteUI.innerText= `${quote}`
+            insertQuoteUI.innerText= `${quote}`;
+            insertIdUI.innerText= `${idNumber}`;
         }
     }
-    xhr.send(); */
+    xhr.send(); 
     e.preventDefault();
 });
 
